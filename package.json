@@ -48,14 +48,14 @@
     }
   },
   "lint-staged": {
-    "src/client/**/*.{js}": [
+    "client/src/**/*.{js}": [
       "prettier --write",
-      "eslint --fix src/client/",
+      "cd client && ./node_modules/.bin/eslint --fix src/",
       "git add"
     ],
     "src/**/*.{js}": [
       "prettier --write",
-      "eslint --fix src/",
+      "./node_modules/.bin/eslint --fix src/",
       "git add"
     ]
   }
