@@ -8,7 +8,7 @@
     "start": "node -r esm src/index.js",
     "lint": "yarn run server:lint; yarn run client:lint",
     "server:dev": "env-cmd -f ./config/dev.env nodemon -r esm --ignore client/ src/index.js",
-    "server:test": "env-cmd -f ./config/test.env jest --runInBand src/**",
+    "server:test": "jest --runInBand src/**",
     "server:lint": "eslint '**/*.js' --ignore-pattern /client/",
     "client:dev": "cd client && yarn start",
     "client:test": "cd client && yarn test --watchAll=false",
