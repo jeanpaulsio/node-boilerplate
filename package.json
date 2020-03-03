@@ -11,7 +11,7 @@
     "server:test": "env-cmd -f ./config/test.env jest --runInBand src/**",
     "server:lint": "eslint '**/*.js' --ignore-pattern /client/",
     "client:dev": "cd client && yarn start",
-    "client:test": "cd client && yarn test",
+    "client:test": "cd client && yarn test --watchAll=false",
     "client:lint": "cd client && eslint 'src/**/*.js'",
     "dev": "concurrently --kill-others \"yarn run server:dev\" \"yarn run client:dev\"",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
