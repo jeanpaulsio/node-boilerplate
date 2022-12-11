@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "esm": "3.2.25",
-    "express": "4.17.1",
+    "express": "4.17.3",
     "mongodb": "3.3.3",
     "mongoose": "5.7.7"
   },
